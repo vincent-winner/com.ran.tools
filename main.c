@@ -15,11 +15,11 @@ int szip()
 	{
 		case 1:
 			cls();
-			system("/data/data/com.ran.tools/files/bin/filehide");
+			system("/data/data/com.ran.tools/files/bin2/filehide");
 		break;
 		case 2:
 			cls();
-			system("/data/data/com.ran.tools/files/bin/fileunhide");
+			system("/data/data/com.ran.tools/files/bin2/fileunhide");
 		break;
 		default:
 			cls();
@@ -38,11 +38,11 @@ int swap()
 	{
 		case 1:
 			cls();
-			system("/data/data/com.ran.tools/files/bin/swap-emmc");
+			system("/data/data/com.ran.tools/files/bin2/swap-emmc");
 		break;
 		case 2:
 			cls();
-			system("/data/data/com.ran.tools/files/bin/swap-sdcard");
+			system("/data/data/com.ran.tools/files/bin2/swap-sdcard");
 		break;
 		default:
 			cls();
@@ -84,7 +84,7 @@ int zdmnq()
 int main()
 {
 	static int x;
-	system("cp -f ./*.sh /data/data/com.ran.tools/files");
+	system("mv ./*.sh /data/data/com.ran.tools/files");
 	system("chmod 0755 /data/data/com.ran.tools/files/*.sh");
 	system("sh /data/data/com.ran.tools/files/checkbin.sh");
 	printf("!!!!!带'*'的选项需要root权限!!!!!\n\n");
@@ -101,11 +101,11 @@ int main()
 	{
 		case 1:
 			cls();
-			system("/data/data/com.ran.tools/files/bin/emmcclr");
+			system("/data/data/com.ran.tools/files/bin2/emmcclr");
 		break;
 		case 2:
 			cls();
-			system("/data/data/com.ran.tools/files/bin/memclr");
+			system("/data/data/com.ran.tools/files/bin2/memclr");
 		break;
 		case 3:
 			cls();
@@ -113,7 +113,7 @@ int main()
 		break;
 		case 4:
 			cls();
-			system("/data/data/com.ran.tools/files/bin/net_tool");
+			system("/data/data/com.ran.tools/files/bin2/net_tool");
 		break;
 		case 5:
 			cls();

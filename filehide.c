@@ -40,18 +40,6 @@ int information()
 	printf("第二步:记住这个文件夹的路径\n\n");
 	printf("注意:如果出现中文乱码或无法输入中文的情况按以下方法处理\n第一步:点击右上角三个点\n第二步:选择第一项\"preferences\"\n第三步:找到UTF-8并打钩\n\n");
 }
-/*
-int tb2g()
-{
-	sprintf(file_tbz2,"%star -jcvf %s.tbz2 %s",pathf,file_name,file_pathi);
-	system(file_tbz2);
-	sprintf(file_tbz2_gz,"%sgzip %s.tbz2",pathf,file_name);
-	system(file_tbz2_gz);
-	sprintf(rename_mv_tbz2_gz,"%smv %s.tbz2.gz %s/%s.tb2g",pathf,file_name,file_patho,file_name);
-	system(rename_mv_tbz2_gz);
-	printf("文件已压缩到指定位置");
-}
-*/
 int bz()
 {
 	sprintf(file_tbz2,"%s/data/data/com.ran.tools/files/bin/tar -jcvf %s.tbz2 %s",pathf,file_name,file_pathi);

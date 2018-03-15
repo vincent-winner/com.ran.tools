@@ -64,7 +64,7 @@ int file_qq_png()/*l*/
 	system("export PATH=/data/data/com.ran/files:$PATH;busybox find /storage/emulated/0/Tencent/ -name '*.png' -print -exec rm -rf {} \+");
 }
 
-int main(int argc, char argv[])
+int main(int argc, char *argv[])
 {
 	char optionsf[14];
 	printf("输入选项按回车\n\n");
@@ -122,3 +122,7 @@ int main(int argc, char argv[])
 	    printf("#####################\n");
 	    return 0;
 }
+
+
+
+
