@@ -84,7 +84,7 @@ int zdmnq()
 int main()
 {
 	static int x;
-	system("mv ./*.sh /data/data/com.ran.tools/files");
+	system("mv ./resource/*.sh /data/data/com.ran.tools/files");
 	system("chmod 0755 /data/data/com.ran.tools/files/*.sh");
 	system("sh /data/data/com.ran.tools/files/checkbin.sh");
 	printf("!!!!!带'*'的选项需要root权限!!!!!\n\n");
