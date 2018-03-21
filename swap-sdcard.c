@@ -12,12 +12,12 @@ int swap_sdcard_check()
 }
 int swap_sdcard_on()
 {
-	system("su -c /data/data/com.ran.tools/files/bin/swapon /storage/sdcard1/swap/swapblock");
+	system("su -c /data/data/com.ran.tools/files/usr/bin2/swapon /storage/sdcard1/swap/swapblock");
 	printf("完成\n");
 }
 int swap_sdcard_off()
 {
-	system("su -c /data/data/com.ran.tools/files/bin/swapoff /storage/sdcard1/swap/swapblock");
+	system("su -c /data/data/com.ran.tools/files/usr/bin2/swapoff /storage/sdcard1/swap/swapblock");
 	printf("完成\n");
 }
 int main()

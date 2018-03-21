@@ -15,11 +15,11 @@ int szip()
 	{
 		case 1:
 			cls();
-			system("/data/data/com.ran.tools/files/bin2/filehide");
+			system("/data/data/com.ran.tools/files/usr/bin2/filehide");
 		break;
 		case 2:
 			cls();
-			system("/data/data/com.ran.tools/files/bin2/fileunhide");
+			system("/data/data/com.ran.tools/files/usr/bin2/fileunhide");
 		break;
 		default:
 			cls();
@@ -38,11 +38,11 @@ int swap()
 	{
 		case 1:
 			cls();
-			system("/data/data/com.ran.tools/files/bin2/swap-emmc");
+			system("/data/data/com.ran.tools/files/usr/bin2/swap-emmc");
 		break;
 		case 2:
 			cls();
-			system("/data/data/com.ran.tools/files/bin2/swap-sdcard");
+			system("/data/data/com.ran.tools/files/usr/bin2/swap-sdcard");
 		break;
 		default:
 			cls();
@@ -88,7 +88,7 @@ int main()
 	system("chmod 0755 /data/data/com.ran.tools/files/*.sh");
 	system("sh /data/data/com.ran.tools/files/checkbin.sh");
 	printf("!!!!!带'*'的选项需要root权限!!!!!\n\n");
-	printf("1.清理内部存储空间\n");
+	signone:printf("1.清理内部存储空间\n");
 	printf("2.清理运行内存\n");
 	printf("3.文件特殊处理\n");
 	printf("4.网络工具\n");
@@ -101,11 +101,11 @@ int main()
 	{
 		case 1:
 			cls();
-			system("/data/data/com.ran.tools/files/bin2/emmcclr");
+			system("/data/data/com.ran.tools/files/usr/bin2/emmcclr");
 		break;
 		case 2:
 			cls();
-			system("/data/data/com.ran.tools/files/bin2/memclr");
+			system("/data/data/com.ran.tools/files/usr/bin2/memclr");
 		break;
 		case 3:
 			cls();
@@ -113,7 +113,7 @@ int main()
 		break;
 		case 4:
 			cls();
-			system("/data/data/com.ran.tools/files/bin2/net_tool");
+			system("/data/data/com.ran.tools/files/usr/bin2/net_tool");
 		break;
 		case 5:
 			cls();
@@ -125,11 +125,12 @@ int main()
 		break;
 		case 7:
 			cls();
-			system("/data/data/com.ran.tools/files/bin/cat ./resource/readme");
+			system("/data/data/com.ran.tools/files/usr/bin/cat ./resource/readme");
 		break;
 		default:
 			cls();
-			printf("错误的选项");
+			printf("错误的选项,请重新输入");
+			goto signone;
 		break;
 	}
 }

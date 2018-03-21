@@ -1,6 +1,6 @@
 #!/system/bin/sh
 
-export PWD=/data/data/com.ran.tools/files/home
+cd /data/data/com.ran.tools/files/home
 
 export HOME=/data/data/com.ran.tools/files/home
 

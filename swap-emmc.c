@@ -12,12 +12,12 @@ int swap_emmc_check()
 }
 int swap_emmc_on()
 {
-	system("su -c /data/data/com.ran.tools/files/bin/swapon /data/data/com.ran.tools/files/swap/swapblock");
+	system("su -c /data/data/com.ran.tools/files/usr/bin2/swapon /data/data/com.ran.tools/files/swap/swapblock");
 	printf("完成\n");
 }
 int swap_emmc_off()
 {
-	system("su -c /data/data/com.ran.tools/files/bin/swapoff /data/data/com.ran.tools/files/swap/swapblock");
+	system("su -c /data/data/com.ran.tools/files/usr/bin2/swapoff /data/data/com.ran.tools/files/swap/swapblock");
 	printf("完成\n");
 }
 int main()
