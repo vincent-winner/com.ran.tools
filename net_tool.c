@@ -11,7 +11,7 @@ char gateway[30];
 const char pathf[200]="sh /data/data/com.ran.tools/files/addpath.sh;";
 int cls()
 {
-	system("/data/data/com.ran.tools/files/bin/clear");
+	system("/data/data/com.ran.tools/files/usr/bin/clear");
 }
 int ip_out()
 {
@@ -65,7 +65,7 @@ int main()
 {
 	int option;
 	printf("!!!!!在使用之前先打开WiFi开关!!!!!\n\n");
-	printf("1.获取所有网卡信息\n");
+	hh:printf("1.获取所有网卡信息\n");
 	printf("2.获取WiFi模块信息\n");
 	printf("3.获取IP地址,网关，子网掩码\n");
 	printf("4.获取外网IP\n");
@@ -123,7 +123,8 @@ int main()
 		break;
 		default:
 			cls();
-			printf("错误的选项\n");
+			printf("错误的选项,重新输入:");
+			goto hh;
 		break;
 	}
 }

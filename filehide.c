@@ -20,7 +20,7 @@ char passwd[100];
 const char pathf[]="sh ./data/data/com.ran.tools/files/addpath.sh;";
 int cls()
 {
-	system("/data/data/com.ran.tools/files/bin/clear");
+	system("/data/data/com.ran.tools/files/usr/bin/clear");
 }
 int input_()
 {
@@ -144,7 +144,7 @@ int main()
 	information();
 	printf("文件压缩过程可能较慢，请耐心等待\n");
 	printf("###选项按压缩率从小到大排列###\n输入选项(数字):\n");
-	printf("0.使用\"tar\"打包(无压缩)\n");
+	jj:printf("0.使用\"tar\"打包(无压缩)\n");
 	printf("1.使用\"lzip\"压缩\n");
 	printf("2.使用\"zip\"压缩\n");
 	printf("3.使用\"gzip\"压缩\n");
@@ -197,7 +197,8 @@ int main()
 		break;
 		default:
 			cls();
-			printf("错误的选项");
+			printf("错误的选项,请重新输入:");
+			goto jj;
 		break;
 	}
 }

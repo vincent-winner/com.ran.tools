@@ -11,7 +11,7 @@ char extract[200];
 const char pathf[]="sh /data/data/com.ran.tools/files/addpath.sh;";
 int cls()
 {
-	system("/data/data/com.ran.tools/files/bin/clear");
+	system("/data/data/com.ran.tools/files/usr/bin/clear");
 }
 int information()
 {
@@ -27,18 +27,6 @@ int input()
 	printf("想要把文件解包哪里(路径)\n");
 	scanf("%s",file_patho);
 }
-/*
-int un_superzip_lv3()
-{
-	sprintf(un_gz,"%sgunzip -c %s/%s > %s/%s.ungz",pathf,file_pathi,file_name,file_patho,file_name);
-	system(un_gz);
-	sprintf(un_bz2,"%star -jxvf %s/%s.ungz -C %s/",pathf,file_patho,file_name,file_patho);
-	system(un_bz2);
-	sprintf(rm_ungz,"%srm -rf %s/%s.ungz",pathf,file_patho,file_name);
-	system(rm_ungz);
-	printf("文件已解包到指定位置");
-}
-*/
 int unbz()
 {
 	sprintf(un_bz2,"%s/data/data/com.ran.tools/files/bin/tar -jxvf %s/%s -C %s",pathf,file_pathi,file_name,file_patho);
@@ -98,7 +86,7 @@ int main()
 	int option;
 	information();
 	printf("要解包的文件类型:\n");
-	printf("0.\"tar\"\n");
+	ll:printf("0.\"tar\"\n");
 	printf("1.\"tar.lz\"(tlz)\n");
 	printf("2.\"zip\"\n");
 	printf("3.\"tar.gz\"(tgz)n");
@@ -158,7 +146,8 @@ int main()
 		break;
 		default:
 			cls();
-			printf("错误的选项");
+			printf("错误的选项,请重新输入:");
+			goto ll;
 		break;
 	}
 }

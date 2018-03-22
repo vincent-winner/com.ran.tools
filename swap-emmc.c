@@ -2,7 +2,7 @@
 #include <stdlib.h>
 int cls()
 {
-	system("/data/data/com.ran.tools/files/bin/clear");
+	system("/data/data/com.ran.tools/files/usr/bin/clear");
 }
 int swap_emmc_check()
 {

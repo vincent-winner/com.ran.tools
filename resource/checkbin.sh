@@ -44,6 +44,8 @@ echo "正在更改权限中"
 chmod -R 4755 /data/data/com.ran.tools/files/usr
 chmod -R 4755 /data/data/com.ran.tools/files/home
 echo "权限修改完毕"
+#清屏
+cp /data/data/com.ran.tools/files/usr/bin/applets/clear /data/data/com.ran.tools/files/usr/bin/
 busybox sleep 2
 busybox clear
 fi
